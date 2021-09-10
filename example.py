@@ -1,15 +1,3 @@
-# dummy_collectives
-A minimum demo for PyTorch c10d extension APIs
-
-###  Build
-
-```bash
-python setup.py install
-```
-
-### Usage
-
-```python
 import os
 
 import torch
@@ -34,4 +22,3 @@ try:
     dist.broadcast(x, 0)
 except RuntimeError:
     print("got RuntimeError when calling broadcast")
-```
